@@ -1,0 +1,15 @@
+{
+  "name": "cat-adopt",
+  "version": "1.0.0",
+  "description": "Cat adoption website",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch" : "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Zarkaoui Idriss",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
