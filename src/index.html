@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../public/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Cat Adopt</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <nav id="navbar">
         <div class=" container mx-auto p-3 flex items-center justify-between">
             <div>
-                <img class="rounded-full border-2 border-slate-600" src="../dist/images/gray-cat-logo.jpeg" alt="Cat logo" width="85px">
+                <img class="rounded-full border-2 border-slate-600" src="../public/images/gray-cat-logo.jpeg" alt="Cat logo" width="85px">
             </div>
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#" class=" hover:text-orange-600">HOME</a>
@@ -20,6 +21,14 @@
                 <a href="#" class=" hover:text-orange-600">ABOUT</a>
                 <a href="#" class="px-6 py-2 text-white bg-slate-600 rounded-full hover:bg-orange-600">CONTACT</a>
             </div>
+            <button id="menu-button" class="mx-4 text-2xl text-slate-600 hover:text-orange-600 md:hidden"><i class="ri-menu-fill"></i></button>
+        </div>
+        <!-- drop menu -->
+        <div id="drop-menu" class="hidden p-8 rounded-xl border border-orange-600 absolute bg-slate-100 left-8 right-8 flex flex-col items-center space-y-6">
+            <a href="#" class=" hover:text-orange-600">HOME</a>
+                <a href="#" class=" hover:text-orange-600">SERVICE</a>
+                <a href="#" class=" hover:text-orange-600">ABOUT</a>
+                <a href="#" class="px-6 py-2 text-white bg-slate-600 rounded-full hover:bg-orange-600">CONTACT</a>
         </div>
     </nav>
 
@@ -32,25 +41,50 @@
                 <a href="#" class=" text-white py-2 px-6 bg-slate-600 rounded-full hover:bg-orange-600 self-center md:self-start">GET STARTED</a>
             </div>
             <div class="md:w-1/2 ">
-                <img src="../dist/images/undraw_welcome_cats_thqn.svg" alt="Welcome cats image">
+                <img src="../public/images/undraw_welcome_cats_thqn.svg" alt="Welcome cats image">
             </div>
         </div>
     </section>
 
     <!-- testimonials section -->
     <section id="testimonials">
-        <div class="container mx-auto p-6 space-y-6 flex flex-col items-center md:flex-row">
-
-            <div class="text-center space-y-6">
+        <div class="container mx-auto my-24 p-6 space-y-8 flex  items-center flex-col">
+            <div class="text-center px-8 mx-auto space-y-10">
                 <h1 class="font-bold text-slate-800 text-3xl md:text-5xl">“Happy tales of cat adoption bliss”</h1>
-                <p class="px-4 md:px-0">
-                    Discover transformative cat adoption stories, showcasing joy, love, and healing. Testimonials reveal the profound impact of welcoming a feline companion, from heartwarming friendships to the immeasurable rewards of providing a forever home.<br>Join our community, be inspired by life-changing connections forged through the magic of cat adoption.
+                <p class="max-w-4xl">
+                    Discover transformative cat adoption stories, showcasing joy, love, and healing. Testimonials reveal the profound impact of welcoming a feline companion, from heartwarming friendships to the immeasurable rewards of providing a forever home.
                 </p>
             </div>
 
-            <div>Test</div>
-            <div>Test</div>
+            <div class="flex mx-10 px-6 py-6 flex-col items-center space-x-0 space-y-8 md:space-y-0 md:space-x-8 md:flex-row">
+                <div class="md:w-1/3 p-6 rounded-lg flex flex-col items-center space-y-20 border border-slate-300 hover:bg-orange-100">
+                    <img src="../public/images/pic1.jpg" alt="Profile picture" class="w-20 h-20 border-2 -my-10 border-orange-300 rounded-full">
+                    <p class="text-slate-800 text-center">Adopting my cat was the best decision ever! She fills my home with love, joy and endless entertainment. I recommend this experience to everyone no matter who they are.</p>
+                </div>
+                <div class="md:w-1/3 p-6 rounded-lg flex flex-col items-center space-y-16 border border-slate-300 hover:bg-slate-100">
+                    <img src="../public/images/circlepic2.png" alt="Profile picture" class="w-20 h-20 border-2 -my-10 border-orange-300 rounded-full">
+                    <p class="text-slate-800 text-center">My adopted cat is my constant companion, providing comfort during challenging times and always making me smile with their playful antics. They have truly become a cherished member of my family.</p>
+                </div>
+                <div class="md:w-1/3 p-6 rounded-lg flex flex-col items-center space-y-20 border border-slate-300 hover:bg-orange-100">
+                    <img src="../public/images/circle-profile-pic.jpg" alt="Profile picture" class="w-20 h-20 border-2 -my-10 border-orange-600 rounded-full">
+                    <p class="text-slate-800 text-center">My rescued cat brings so much happiness to my life. I can't imagine my days without her playful antics. My children and I appreciate her existence in our life</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container mb-10 flex flex-col  mx-auto p-6 bg-orange-400">
+            <form action="#" class="flex flex-col items-center space-y-6">
+                <input class="p-2 rounded-full" type="text" placeholder="Enter your name">
+                <input class="p-2 rounded-full" type="email" placeholder="Enter your mail">
+                <textarea class="rounded-lg p-2" placeholder="Enter your message" name="message" id="message" cols="20" rows="8"></textarea>
+            </form>
+            <button class="my-6 py-2 px-6 bg-slate-800 self-center rounded-full text-white">SEND</button>
+        </div>
+    </section>
+    <!-- footer -->
+    <script src="../public/js/script.js"></script>
 </body>
 </html>
